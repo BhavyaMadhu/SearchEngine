@@ -1,0 +1,101 @@
+<div class="tuft-dashboard container">
+  <div class="dashboard-wrapper">
+    <div class="tt-header">
+      <!-- <div class="m-b-13">
+        <h2 class="d-title">Top Trending Topics</h2>
+        <span class="d-info"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+        <a class="d-seeall">see all topics(345)</a>
+</div>   -->
+    </div>
+    <div class="tt-maps">
+      <div class="row">
+        <div class="col-3">
+          <div class="d-climate-change p-10">
+            <h4> <a [routerLink]="'/tufts/summaries'">Cisco SSIP (Package)</a></h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 b-r-dashed-1">
+          <div class="tt-map-g2 p-10">
+            <canvas *ngIf="lineChartLabels.length > 0" baseChart width="25" height="15" [datasets]="lineChartData" [labels]="lineChartLabels"
+              [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+            <div><span class="linear-base-first">Prevalence Trend</span> <span class="linear-base-second">3 years</span></div>
+          </div>
+        </div>
+        <div class="col-3 b-r-dashed-1">
+          <div class="tt-map-g3 p-10">
+            <canvas *ngIf="barChartLabels.length > 0" baseChart width="25" height="15" [datasets]="barChartData" [labels]="barChartLabels"
+              [options]="barChartOptions" [legend]="barChartLegend" [colors]="barChartColors" [chartType]="barChartType" (chartHover)="barChartHovered($event)"
+              (chartClick)="barChartClicked($event)"></canvas>
+            <div style="margin-top: 11px;"><span class="linear-base-first p-r-10">Projects</span><span class="linear-circle">{{this.barChartLabels.length}}</span></div>
+          </div>
+        </div>
+        <div class="col-2 b-r-dashed-1">
+          <div class="tt-map-g4 p-10">
+            <div class="row">
+              <div class="col-4" *ngFor="let circle of circleData" style="padding: 2px;">
+                <!--<div class="tt-circles">
+                </div>-->
+                <div><i style="font-size: 50px;" class="fa fa-circle-thin" aria-hidden="true"></i></div>
+              </div>
+              <div style="margin-top: 40px;"><span class="linear-base-first p-r-10">People</span><span class="linear-circle">24</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="tt-map-g5 p-10">
+            <!--<world-map
+          #theMap
+          (countryEnter)="onCountryEnter($event)"
+          (countryLeave)="onCountryLeave($event)"
+          (countryClick)="onCountryClick($event)">
+      </world-map>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="col-4 linear-charts" *ngFor="let chart of linearCharts | slice:0:linearLimit; let i = index; let last = last;"
+        [ngClass]="{'b-r-1': !last}">
+        <div class="block">
+          <a class="linear-header" style="height: 51px;">
+
+            <div><a [routerLink]="'/tufts/summaries'">{{chart.lchartHeader}}</a></div>
+          </a>
+        </div>
+        <div class="block">
+          <div class="col-8 p-0">
+            <canvas baseChart width="50" height="20" [datasets]="chart.lchart" [labels]="lineChartLabels" [options]="lineChartOptions"
+              [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"></canvas>
+            <div><span class="linear-base-first">Prevalence Trend</span> <span class="linear-base-second">3 years</span></div>
+          </div>
+          <div class="col-4 linear-charts-legends">
+            <div><span class="linear-legend">Projects</span><span class="linear-circle">7</span></div>
+            <div><span class="linear-legend">People</span><span class="linear-circle">28</span></div>
+            <div><span class="linear-legend">Location</span><span class="linear-circle">28</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="linear-see-more">
+        <div>See more topics <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+    </div>-->
+  </div>
+
+  <div class="d-see-all"><a (click)="linearLimit = linearCharts.length">See all<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+  <div class="d-browse">Browse by category</div>
+
+  <div class="row">
+    <div class="col-md-4 m-b-lg m-b-15" *ngFor="let category of categoryList">
+      <div class="dashboard-container" [ngStyle]="{'background-image': 'url(../../assets/images/' + category.url + ')'}">
+        <div class="dashboard-card">
+          <h1><a [routerLink]="category.routerLink">{{category.name}}</a></h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

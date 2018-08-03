@@ -1,0 +1,23 @@
+.card-container{
+    border-top: 2px solid black;
+    margin-bottom: 25px;
+  .see-all{
+    color: #007bff;
+    cursor: pointer;
+  }
+  .card{
+    border: none;
+  }
+  > .row{
+    overflow-y:auto; 
+    max-height:326px;
+  }
+  i{
+    color: #3f9bff;
+    font-size: 12px;
+  }
+}
+.img-round{
+    border-radius: 50%;
+    padding: 5px;
+ }

@@ -1,0 +1,25 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "q":"*",
+      "json.facet":"{country_facet:{type: terms, field: country_code}}",
+      "rows":"0"}},
+  "response":{"numFound":39299,"start":0,"docs":[]
+  },
+  "facets":{
+    "count":39299,
+    "country_facet":{
+      "buckets":[{
+        "val":"AFG",
+        "count":20},
+        {
+          "val":"RUS",
+          "count":8},
+        {
+          "val":"BRA",
+          "count":3},
+        {
+          "val":"USA",
+          "count":10}]}}}

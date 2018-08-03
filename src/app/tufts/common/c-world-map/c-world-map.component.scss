@@ -1,0 +1,46 @@
+@import '../../../styles/main.scss';
+
+.c-world-map{
+    margin-top: 15px;
+    .s-world-card{
+        padding: 20px;
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+    }
+    .s-world-header{
+        font-family: WhitneySemiBold;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.18;
+        text-align: left;
+        color: #000000;
+    }
+    .s-world-select{
+        width: 239px;
+        height: 38px;
+    }
+    .s-world-number{
+        font-family: WhitneyMedium;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        color: #000000;
+        margin-right: 13px
+    }
+    .s-world-name{
+        font-family: WhitneyMedium;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: $accessible-blue;
+        cursor: pointer;
+    }
+    .s-world-line{
+        border-bottom: solid 1px #979797;
+        line-height: 1rem;
+    }
+
+    .s-world-line div {
+        display: inline-flex;
+    }
+}

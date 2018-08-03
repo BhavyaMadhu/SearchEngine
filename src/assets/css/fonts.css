@@ -1,0 +1,29 @@
+@font-face {
+    font-family: GothamBold;
+    src: url("/assets/fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: WhitneyBold;
+    src: url("/assets/fonts/Whitney-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: WhitneySemiBold;
+    src: url("/assets/fonts/Whitney-Semibld.otf") format("opentype");
+}
+
+@font-face {
+    font-family: WhitneyMedium;
+    src: url("/assets/fonts/Whitney-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: WhitneyBook;
+    src: url("/assets/fonts/Whitney-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: WhitneyBookItalic;
+    src: url("/assets/fonts/Whitney-BookItal.otf") format("opentype");
+}

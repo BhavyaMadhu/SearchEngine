@@ -1,0 +1,31 @@
+<div class="c-faculty">
+  <div class="row" style="margin-top: 25px">
+    <div class="col-md-6"><span class="s-faculty-header">People</span><span class="s-info"><i class="fa fa-info-circle" aria-hidden="true"></i></span></div>
+    <div class="col-md-6">
+      <span class="list-results"><span class="f-w-600">{{facultyList?.length}}</span> <span>Results</span></span>
+    </div>
+  </div>
+
+  <div *ngIf="facultyList.length > 0; else nodata;">
+    <div class="row">
+      <div class="col-md-6" *ngFor="let faculty of facultyList | slice:0:4">
+        <div class="s-faculty-card">
+          <div class="row m-0">
+            <div class="col-md-4 p-l-0"><img class="s-faculty-ph" src="assets/images/faculty-ph.jpg"></div>
+            <div class="col-md-8" style="padding: 13px 26px">
+              <h6 class="s-faculty-name"><a class="cursor-pointer">{{faculty.display_name}}</a></h6>
+              <div class="s-faculty-type">{{faculty.academic_title_ss[0]}}</div>
+              <div class="s-faculty-dept">{{faculty.department_display_ss[0]}}</div>
+              <div class="s-faculty-grad">{{faculty.school_display_ss[0]}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div><a class="see-all-name" [routerLink]="['../faculties']">See all</a><span class="see-all-chevron"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
+  </div>
+  <ng-template #nodata>
+    <div>No People available</div>
+  </ng-template>
+</div>

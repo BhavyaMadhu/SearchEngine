@@ -1,0 +1,52 @@
+.tufts-courses{
+    .courses-bar{
+        padding: 17px 21px;
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        .border-dash{
+            border-right-style: dashed;
+            border-right-color: #cecece;
+        }
+        .c-header{
+            font-family: WhitneySemiBold;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.18;
+            text-align: left;
+            color: #000000;
+        }
+        .c-bar-select{
+            width: 239px;
+            height: 38px;
+            background-color: #ffffff;
+            border: solid 1px #000000;
+        }
+        .c-bar-radio{
+            font-family: WhitneyMedium;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            color: #000000;
+        }
+        .c-barData{
+            margin-bottom: 15px;
+            .c-square{
+                width: 15px;
+                height: 15px;
+                display: inline-block
+            } 
+            .c-square-info{
+                display: inline;
+                font-family: WhitneyBook;
+                font-size: 14px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+    }
+    .c-table-table, .c-table-body{
+        padding: 17px 21px;
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+    }
+}

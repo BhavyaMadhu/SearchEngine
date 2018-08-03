@@ -1,0 +1,66 @@
+.c-news {
+  .s-news-header {
+    font-family: WhitneySemiBold;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+    text-align: left;
+    color: #000000;
+  }
+  .s-news-card {
+    margin-top: 18px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    min-height: 162px;
+  }
+  .s-image-bg {
+    background-color: #979797;
+    min-height: 162px;
+    position: relative;
+    .s-image {
+      width: 56px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -28px 0 0 -28px;
+    }
+  }
+  .s-newsgraph-card {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    min-height: 162px;
+  }
+  .s-news-results,
+  .s-news-num {
+    font-family: WhitneyBook;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #000000;
+    margin-top: 5px;
+  }
+  .s-news-num {
+    font-weight: 600;
+  }
+  .s-news-date {
+    font-family: WhitneySemiBold;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000;
+  }
+  .s-news-desc {
+    font-family: WhitneyMedium;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #3172ae;
+  }
+  .s-news-name {
+    font-family: WhitneyBookItalic;
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    color: #000000;
+  }
+}

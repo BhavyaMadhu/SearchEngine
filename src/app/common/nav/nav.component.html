@@ -1,0 +1,28 @@
+<!--<div class="menu-container">
+  <div class="tn-menu">
+    <ul class="nav flex-column">
+      <li class="nav-item" routerLinkActive="active" *ngFor="let menuItem of categories">
+        <a class="nav-link active" [routerLink]="menuItem.routerLink" >{{menuItem.category}} {{menuItem.count}}</a>
+      </li>
+    </ul>
+  </div>
+</div>-->
+<div class="header-tabs">
+  <nav class="navbar navbar-toggleable-md navbar-inverse streams-navbar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse tn-menu">
+      <ul class="navbar-nav mr-auto margin-auto">
+        <li class="nav-item" *ngFor="let menuItem of categories; let first = first;" [ngClass]="{'active': currentRoute === menuItem.routerLink}">
+          <a class="nav-link active" [routerLink]="menuItem.routerLink">{{menuItem.category}} <span [ngClass]="{'nav-count-shape': !first}"><span *ngIf="!first" class="nav-count">{{menuItem.count}}</span></span></a>
+        </li>
+<!--
+        <div id="lavalamp"></div>
+-->
+      </ul>
+
+    </div>
+  </nav>
+</div>

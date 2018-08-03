@@ -1,0 +1,60 @@
+@import '../../styles/vars';
+
+.header-tabs {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-right: 20px;
+}
+
+.menu-container {
+  background-color: $tufts-gray-l69;
+  position: fixed;
+  height: 100vh;
+  width: $menu-width;
+  box-shadow: none;
+  z-index: 100;
+}
+.tn-menu{
+  opacity: 0.7;
+  background-color: #000000;
+  height:56px;
+  ul {
+    li{
+      padding: 6px 10px;
+      a{
+        font-family: WhitneyBook;
+        line-height: 34px;  
+        border-bottom: 7px solid transparent;
+      }
+      &.active{
+        a{
+          color: white;
+          font-weight: bold;
+          border-bottom-color:#000;
+        }
+      }
+    }
+  }
+}
+
+.nav-count{
+  font-family: WhitneyMedium;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.nav-count-shape{
+  opacity: 0.6;
+  border-radius: 16px;
+  display: inline-block;
+  border: solid 0.5px #ffffff;
+  width: 26px;
+  height: 19px;
+  text-align: center;
+  line-height: 17px;
+}
+
+.streams-navbar {
+  padding: 0;
+}

@@ -1,0 +1,54 @@
+// // These fonts are included in the root main.scss file within this greenstack module
+// // On build webpack distributes them into the root dist folder
+
+// @font-face {
+//   font-family: 'Proxima Nova';
+//   //noinspection CssUnknownTarget
+//   src: url(./fonts/proximanova-light-webfont.woff2) format("woff2"),
+//        url(./fonts/proximanova-light-webfont.woff) format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Proxima Nova';
+// //noinspection CssUnknownTarget
+// 	src: url(./fonts/proximanova-regular-webfont.woff2) format("woff2"),
+// 	     url(./fonts/proximanova-regular-webfont.woff) format("woff");
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Proxima Nova';
+// //noinspection CssUnknownTarget
+// 	src: url(./fonts/proximanova-semibold-webfont.woff2) format("woff2"),
+// 	     url(./fonts/proximanova-semibold-webfont.woff) format("woff");
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Proxima Nova';
+// //noinspection CssUnknownTarget
+// 	src: url(./fonts/proximanova-bold-webfont.woff2) format("woff2"),
+// 	     url(./fonts/proximanova-bold-webfont.woff) format("woff");
+// 	font-weight: 700;
+// 	font-style: normal;
+// }
+
+// /**
+//  * Font weight variables
+//  */
+// $font-weight-ultra-light: 100;
+// $font-weight-light: 300;
+// $font-weight-semibold: 600;
+// $font-weight-bold: 700;
+
+// .semibold {
+//   font-weight: $font-weight-semibold;
+// }
+
+// html, body {
+//   font-family: "Proxima Nova", Arial, sans-serif;
+// }

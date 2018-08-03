@@ -1,0 +1,62 @@
+.s-card-layout {
+  background-color: #ffffff;
+  border: solid 1px #cecece;
+  display: flex;
+  margin: 0 15px;
+  height: 227px;
+}
+.s-card-name {
+  width: 366px;
+  height: 26px;
+  font-family: WhitneySemiBold;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.18;
+  text-align: left;
+  color: #000000;
+}
+.s-card-prof {
+  font-family: WhitneyBook;
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+}
+.s-card-bd {
+  font-family: WhitneyBook;
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+}
+.s-card-sas {
+  font-family: WhitneyBook;
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+}
+.s-card-info {
+  font-family: WhitneyBook;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: left;
+  color: #000000;
+}
+.s-card-email {
+  font-size: 14px;
+  color: #000000;
+}
+.s-card-content {
+  font-family: WhitneyBook;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: left;
+  color: #000000;
+}
+.s-card-desc-footer {
+  font-family: WhitneyBook;
+  font-size: 17px;
+  text-align: left;
+  color: #3172ae;
+}
+.checked {
+  color: orange;
+}

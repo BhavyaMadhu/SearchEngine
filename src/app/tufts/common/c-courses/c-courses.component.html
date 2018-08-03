@@ -1,0 +1,198 @@
+<div class="container ">
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="card mb-3 mt-3" *ngFor="let list of summaryList">
+                <div class="card-body">
+                    <!-- <a data-toggle="modal" data-target=".bd-example-modal-lg"> -->
+
+                    <div>
+                        <h3>
+                            <u>{{list.productName}}</u>
+                        </h3>
+                    </div>
+                    <div class="font1">
+                        <p style="margin-bottom:0.5rem">Technology Category: {{list.technologyCategory}}
+                        </p>
+
+                        <span>Used in {{list.usedIn}} Cisco Projects</span>
+                        <span id="typeid">License type: {{list.licenseType}}
+                        </span>
+                    </div>
+                    <div>
+                        <p id="wordWarp">{{list.description}}</p>
+
+                        <div class="starClass">
+                            <span style="float:left; color:gray; padding-right:2px">Star Rating:</span>
+                            <div style="float:left">
+                                <div>
+                                    <span>
+                                        <i class="fa fa-star-o" [ngClass]="{'starColor':list.starRating > 0}"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-star-o" [ngClass]="{'starColor': list.starRating >= 1}"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-star-o" [ngClass]="{'starColor':list.starRating >= 2}"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-star-o" [ngClass]="{'starColor':list.starRating >= 3}"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-star-o" [ngClass]="{'starColor':list.starRating >= 4}"></i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                            <span style="float:left; color:gray; padding-left:2px">2 product Reviews</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-3 font2">
+                            <span>Supplier Rating:</span>
+                            <span [ngClass]="(list.supplierRating === 'Preferred') ? 'classGreen' : 'classGray' ">
+                                <b>{{list.supplierRating}}</b>
+                            </span>
+                        </div>
+                        <div class="col-3 font2">
+                            <span>Security Rating: </span>
+                            <span [ngClass]=getColor(list.securityRAting)>
+                                <b>{{list.securityRAting}}</b>
+                            </span>
+                        </div>
+                        <div class="col-3 font2">
+                            <span>Quality Rating:</span>
+                            <span [ngClass]=getColor(list.qualityRating)>
+                                <b>{{list.qualityRating}}</b>
+                            </span>
+                        </div>
+                        <div class="col-3">
+                            <a (click)="openModal(list.productId)" style="cursor:pointer">
+                                <span id="downIcon">
+                                    <i class="fa fa-chevron-down fa-lg"></i>
+
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- *************Modal starts from here************* -->
+<div class="modal fade bd-example-modal-lg" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div *ngFor="let pro of productDetail">
+                <!-- <div style="float: right;padding-right: 13px; cursor:pointer" > <a (click)="closeModal()" >X</a></div> -->
+                <div class="container modal-container">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <h3>
+                            <u>{{pro?.productName}}</u>
+                        </h3>
+                    </div>
+                    <div class="font1">
+
+
+                        <span>Used in {{pro?.usedIn}} Cisco Projects</span>
+                        <span id="typeid">License type: {{pro?.licenseType}}
+                        </span>
+                        <!-- <span>{{pro?.BU-1}}</span>
+                                <span>{{pro?.BU-2}}</span>
+                                <span>{{pro?.BU-3}}</span> -->
+                    </div>
+
+                    <div class="row mb-3 mt-3">
+                        <div class="col-4 font2">
+                            <span>Supplier Rating:</span>
+                            <span [ngClass]="(pro?.supplierRating === 'Preferred') ? 'classGreen' : 'classGray' ">
+                                <b>{{pro?.supplierRating}}</b>
+                            </span>
+                        </div>
+                        <div class="col-4 font2">
+                            <span>Security Rating: </span>
+                            <span [ngClass]=getColor(pro?.securityRAting)>
+                                <b>{{pro?.securityRAting}}</b>
+                            </span>
+                        </div>
+                        <div class="col-4 font2">
+                            <span>Quality Rating:</span>
+                            <span [ngClass]=getColor(pro?.qualityRating)>
+                                <b>{{pro?.qualityRating}}</b>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p id="wordWarp2">{{pro?.description}}</p>
+
+
+                    </div>
+
+                    <br>
+                    
+                    <div>
+                        <a target="_blank" href="{{pro?.vendorUrl}}">Link to Vendor's Site</a>
+                    </div>
+                    
+                    <hr>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***********Modal ends here********* -->
+
+<!-- 
+*****  technology category
+<p style="margin-bottom:0.5rem">Technology Category: {{pro?.technologyCategory}}
+    </p>
+
+
+    ****** star rating *****canvas
+    <div class="starClass">
+            <span style="float:left; color:gray; padding-right:2px">Star Rating:</span>
+            <div style="float:left">
+                <div >
+                    <span>
+                        <i class="fa fa-star-o" [ngClass]="{'starColor':pro?.starRating > 0}"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-star-o" [ngClass]="{'starColor': pro?.starRating >= 1}"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-star-o" [ngClass]="{'starColor':pro?.starRating >= 2}"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-star-o" [ngClass]="{'starColor':pro?.starRating >= 3}"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-star-o" [ngClass]="{'starColor':pro?.starRating >= 4}"></i>
+                    </span>
+
+                </div>
+
+            </div>
+            <span style="float:left; color:gray; padding-left:2px">2 product Reviews</span>
+        </div>
+
+
+        ***** -->

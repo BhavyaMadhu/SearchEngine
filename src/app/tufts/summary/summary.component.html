@@ -1,0 +1,14 @@
+
+<div class="summary-wrapper container" [ngSwitch]="primaryEntity?.filterType">
+    <app-c-filters [tabName]="tabName" [suggestedFilters]="suggestedFilters"></app-c-filters>
+    <div [ngBusy]="busy"></div>
+    <ng-template [ngSwitchCase]="'person'">
+        <app-summary-faculty *ngIf="primaryEntity && summaryData" [personEntity]="primaryEntity" [summaryData]="summaryData"></app-summary-faculty>
+    </ng-template>
+    <ng-template [ngSwitchCase]="'topic'">
+        <app-summary-topics *ngIf="primaryEntity && summaryData" [topicEntity]="primaryEntity" [summaryData]="summaryData"></app-summary-topics>
+    </ng-template>
+    <ng-template [ngSwitchCase]="'acad_org'">
+        <app-summary-dept-schools *ngIf="primaryEntity && summaryData" [orgEntity]="primaryEntity" [summaryData]="summaryData"></app-summary-dept-schools>
+    </ng-template>
+</div>

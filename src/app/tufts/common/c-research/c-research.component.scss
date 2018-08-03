@@ -1,0 +1,54 @@
+.c-research {
+  .s-research-header {
+    font-family: WhitneySemiBold;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+    text-align: left;
+    color: #000000;
+  }
+  .s-research-card {
+    margin-top: 18px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    min-height: 140px;
+    border-left: 3px solid #00b0b9;
+  }
+  .s-research-date {
+    font-family: WhitneySemiBold;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000;
+  }
+  .s-research-type {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.64;
+    float: right;
+    color: #000000;
+    text-transform: capitalize;
+  }
+  .s-research-desc {
+    font-family: WhitneyMedium;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+  }
+  .s-research-subDesc {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #595959;
+  }
+  .s-research-name {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #595959;
+  }
+}

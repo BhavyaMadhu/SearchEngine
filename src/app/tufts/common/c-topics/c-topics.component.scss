@@ -1,0 +1,63 @@
+.c-topics{
+    .s-topic-results{
+        font-family: WhitneyBook;
+        font-size: 14px;
+        line-height: 1.64;
+        float: right;
+        color: #000000;
+        margin-top: 5px;
+    }
+    .s-topic-number{
+        font-family: WhitneyMedium;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        color: #000000;
+        display: inline;
+        margin-right: 34px;
+    }
+    .s-topic-name{
+        font-family: WhitneyMedium;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: #3172ae;
+        display: inline;
+    }
+    .s-topic-header{
+        font-family: WhitneySemiBold;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.18;
+        text-align: left;
+        color: #000000;
+    }
+    .s-card-topics{
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        margin: 0px;
+        padding: 19px 30px 10px 25px;
+        .col-md-4:nth-child(3n-2){
+            border-right: 1px dashed #cecece;
+        }
+        .col-md-4:nth-child(3n-1){
+            border-right: 1px dashed #cecece;
+        }
+         .col-md-4:nth-child(-n+3){
+            .box-1{
+                border-bottom: 1px solid #949494;
+                padding-bottom: 13px;
+                margin-bottom: 13px;
+            }
+         }
+    }
+    .dynamicBorder{
+        .col-md-4:nth-child(-n+6){
+            .box-1{
+                border-bottom: 1px solid #949494;
+                padding-bottom: 13px;
+                margin-bottom: 13px;
+            }
+         }
+    }
+}

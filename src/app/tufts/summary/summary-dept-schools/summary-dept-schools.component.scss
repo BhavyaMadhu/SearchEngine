@@ -1,0 +1,30 @@
+.summary-dept-schools{
+    /* padding: 20px 30px; */
+    .s-ds-card{
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        padding: 15px;
+        margin-top: 37px;
+        .s-ds-dept{
+            font-family: WhitneySemiBold;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: left;
+            color: #000000;
+        }
+        .s-ds-school{
+            font-family: WhitneyMedium;
+            font-size: 16px;
+            font-weight: 500;
+            color: #3172ae;
+            margin-top: 11px;
+        }
+        .s-ds-website{
+            font-family: WhitneySemiBold;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3172ae;
+            margin-top: 11px;
+        }
+    }
+}

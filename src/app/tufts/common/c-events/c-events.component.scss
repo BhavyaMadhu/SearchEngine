@@ -1,0 +1,63 @@
+.c-events {
+  .s-events-header {
+    font-family: WhitneySemiBold;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+    text-align: left;
+    color: #000000;
+  }
+  .s-events-card {
+    margin-top: 18px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+  }
+  .s-events-results {
+    font-family: WhitneyBook;
+    font-size: 14px;
+    line-height: 1.64;
+    float: right;
+    color: #000000;
+    margin-top: 5px;
+  }
+  .s-events-desc {
+    font-family: WhitneyMedium;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+  }
+  .s-events-date {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+  }
+  .s-events-name {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.64;
+    text-align: left;
+    color: #595959;
+  }
+  .s-events-card-left {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .s-events-month {
+    font-family: WhitneyBook;
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .s-events-day {
+    font-family: GothamBold;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .b_unit {
+    margin-bottom: 10px;
+  }
+}

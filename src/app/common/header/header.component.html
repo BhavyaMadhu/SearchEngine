@@ -1,0 +1,42 @@
+<div class="header-container container">
+  <div class="row p-t-24" *ngIf="!showNavbar">
+    <div class="header-logo col-4">
+      <!-- <a class="cursor-pointer" (click)="routeToDashboard()"><img src="../../../assets/images/logo-white.png" /></a> -->
+      <div class="logo-tag-line"><strong> Optimus </strong></div>
+    </div>
+  </div>
+
+  <div class="block p-7" [ngClass]="{'searchbar-padding': showNavbar}">
+    <div class="header-logo p-t-20 col-3" *ngIf="showNavbar">
+      <!-- <a class="cursor-pointer" (click)="routeToDashboard()">
+        <p>Cisco |nfosphere</p>
+      </a> -->
+    </div>
+    <div class="col-2" *ngIf="!showNavbar">
+    </div>
+    <div class="col-8 p-t-10" [ngClass]="{'p-l-37': showNavbar}">
+      <div class="typeahead-input-group input-group">
+        <input id="typeahead-http" (dismissPopup)="true" type="text" class="form-control header-search" [class.is-invalid]="searchFailed"
+          [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="onSelect($event)" [inputFormatter]="formatter" [resultTemplate]="rt"
+          placeholder="Search" />
+        <span class="search-spinner" *ngIf="searching"><i class="fa-li fa fa-spinner fa-spin"></i></span>
+        <span class="input-group-btn">
+        <button class="btn btn-secondary btn-header-search" type="button"><span style="margin-right: 6px;"><i class="fa fa-search" aria-hidden="true"></i></span>Search</button>
+        </span>
+      </div>
+      <ng-template #rt let-r="result" let-t="term">
+        <span style="font-weight: bold;">{{ r.display_name }}</span>
+        <div><span>{{r.entity_type | titlecase}}</span> <span *ngIf="r.affiliation_ss && r.department_display_ss">|</span> <span>{{r.department_display_ss ? r.department_display_ss[0] : ''}}</span></div>
+      </ng-template>
+      <div *ngIf="noResults" class="no-results">
+        <button class="dropdown-item active" role="option" type="button">
+        <span>No Results Found.</span>
+      </button>
+      </div>
+    </div>
+    <div class="col-2" *ngIf="!showNavbar">
+    </div>
+  </div>
+  <div class="header-date" *ngIf="!showNavbar">{{currentDate | date:'medium' }}</div>
+  <app-nav *ngIf="showNavbar" [currentRoute]="currentRoute"></app-nav>
+</div>

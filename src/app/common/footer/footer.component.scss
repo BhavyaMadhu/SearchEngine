@@ -1,0 +1,35 @@
+.footer-container{
+    .footer-logo{
+        margin-top: 37px; 
+    }
+    .footer-copyright{
+        margin-top: 40px;
+        font-family: WhitneyBold;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: right;
+        color: #949494;
+    }
+    .footer-links{
+        margin-top: 25px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            margin-left: 70px;
+        }
+        li {
+            float: left;
+            margin-right: 30px;
+        }
+
+        li a {
+            font-family: WhitneyMedium;
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+    }
+}

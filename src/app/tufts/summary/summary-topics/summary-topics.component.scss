@@ -1,0 +1,66 @@
+.summary-topics{
+       /* padding: 20px 30px; */
+    .c-barData{
+        margin-bottom: 15px;
+        .c-square{
+            width: 15px;
+            height: 15px;
+            display: inline-block
+        } 
+        .c-square-info{
+            display: inline;
+            font-family: WhitneyBook;
+            font-size: 14px;
+            text-align: left;
+            color: #000000;
+        }
+    }
+    .s-prevalence-card{
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        min-height: 288px;
+        padding: 10px;
+    }
+    .s-dept-card{
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        padding: 10px;
+    }
+    .s-prevalence-header{
+        font-family: WhitneySemiBold;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.18;
+        text-align: left;
+        color: #000000;
+    }
+    .s-dept-header{
+        font-family: WhitneySemiBold;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.18;
+        text-align: left;
+        color: #000000;
+    }
+    .s-courseprev-name{
+        font-family: WhitneySemiBold;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.17;
+        text-align: left;
+        color: #000000;
+    }
+    .s-bar-list{
+        max-height: 220px;
+        overflow-y: scroll;
+    }
+    .s-bar-card{
+        margin: 10px 0px;
+    }
+    .s-courseprev-card{
+        background-color: #ffffff;
+        border: solid 1px #cecece;
+        padding: 15px;
+        margin: 10px 0px;
+    }
+}

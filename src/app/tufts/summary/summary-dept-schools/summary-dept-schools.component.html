@@ -1,0 +1,24 @@
+<div class="summary-dept-schools">
+
+  <div class="s-ds-card">
+    <div class="s-ds-dept">{{orgEntity.display_name}}</div>
+    <div class="s-ds-school">Name of the school</div>
+    <div class="s-ds-website">Department website</div>
+  </div>
+
+  <app-c-faculty *ngIf="facultyList" [facultyList]="facultyList"></app-c-faculty>
+
+  <app-c-courses *ngIf="coursesList" [coursesList]="coursesList" [courseWithGraph]="true" [barDataList]="barDataList" [barChartLabels]="barChartLabels"
+    [barChartData]="barChartData" [barChartOptions]="barChartOptions" [barChartColors]="barChartColors" [barChartLegend]="barChartLegend"
+    [barChartType]="barChartType"></app-c-courses>
+
+  <app-c-research *ngIf="researchList" [researchList]="researchList"></app-c-research>
+
+  <app-c-news *ngIf="newsList" [newsList]="newsList" [newsWithGraph]="false" [newsCount]="4"></app-c-news>
+
+  <app-c-events *ngIf="eventsList" [eventsList]="eventsList"></app-c-events>
+
+  <app-c-world-map></app-c-world-map>
+
+  <app-c-topics *ngIf="topicsList" [topicsList]="topicsList" [dynamicBorder]="true"></app-c-topics>
+</div>

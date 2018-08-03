@@ -1,0 +1,39 @@
+/* Global */
+$font-color: #30343c;
+$font-color-secondary: #a0a8ba;
+$font-color-tertiary: #a7b3b8;
+$font-color-secondary-hover: #6a7c83;
+
+$background-color: #eef0f2;
+$tufts-orange: #f17c35;
+$tufts-white: #fff !default;
+$tufts-blue: #0077bc;
+$tufts-gray-l69: #a2adbf !default; // Brightness 69
+$tufts-gray-l59: #8e95a1 !default; // Brightness 59
+$tufts-gray-l24: #31384a !default; // Brightness 24
+$tufts-softwhite-l43: #d9dce0 !default;
+
+$accessible-blue: #3172ae;
+$line-color: #dae1e6 !default;
+
+$icon-size: 16px;
+
+/* Menu */
+$menu-background: $tufts-softwhite-l43;
+$menu-selected-row: #0077bc;
+$menu-deselected-icon-color: $tufts-gray-l69;
+$menu-selected-icon-color: $tufts-white;
+$menu-secondary-text-color: $tufts-gray-l59;
+$menu-secondary-selected-background: $tufts-gray-l24;
+$menu-toggle-arrow-color: #797c84;
+$menu-toggle-arrow-color-opened: $tufts-white;
+$menu-width: 200px;
+
+/* Secondary Section */
+$secondary-header: #f9fafb;
+$secondary-divider: #eceded;
+$secondary-icon-red-color: #f55a75;
+
+/* Top Bar */
+$notification-badge-red: #f72e50;
+$header-border-color: #dae0e6;

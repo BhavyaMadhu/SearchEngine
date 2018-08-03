@@ -1,0 +1,200 @@
+.c-courses {
+  .s-course-header {
+    font-family: WhitneySemiBold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.18;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col1-text {
+    font-family: WhitneyBook;
+    font-size: 17px;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col1-num {
+    font-family: WhitneyBook;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col2 {
+    font-family: WhitneyMedium;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col2-desc {
+    font-family: WhitneyBook;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col3 {
+    font-family: WhitneyBook;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col4 {
+    font-family: WhitneyMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.64;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-col5 {
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+  }
+  .s-course-table {
+    width: 100%;
+    display: flex;
+    margin: 0 15px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  .s-header-dropdown {
+    width: 239px;
+    height: 38px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+  }
+  .c-header-results {
+    float: right;
+    margin-top: 5px;
+  }
+  .c-barData {
+    margin-bottom: 15px;
+    .c-square {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+    }
+    .c-square-info {
+      display: inline;
+      font-family: WhitneyBook;
+      font-size: 14px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+  .c-header-dropdown {
+    width: 239px;
+    height: 38px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+  }
+  .c-course-layout {
+    width: 100%;
+    display: flex;
+    margin: 0 15px;
+    border-bottom: solid 1px #979797;
+    padding: 10px;
+  }
+  .c-course-hover {
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+/* added by anand */
+
+/* for star width */
+.card{
+  border-radius: 15px;
+}
+// .crop {
+//   overflow: hidden;
+//   height: 20px;
+//   float: left;
+// }
+
+.starClass  {
+  font-size: 13px !important;
+  // float: left;
+  // padding-right: 2px;
+  // color: gray;
+}
+.font1{
+  font-size: 13px !important;
+  font-weight: bold;
+}
+
+.font2{
+  font-size: 13px !important;
+   color: gray;
+  //margin-top: 0.5rem;
+}
+#typeid{
+  float: right;
+  padding-right: 210px;
+}
+.class1 {
+  background-color: red;
+  height: 7px;
+  width: 8px;
+  color: white;
+  font-size: 13px ;
+}
+
+.class2 {
+background-color: yellow;
+height: 7px;
+width: 8px;
+color: black;
+font-size: 13px ;
+
+
+}
+.class3{
+  background-color: rgb(33, 204, 33);
+  height: 7px;
+  width: 8px;
+  color: white;
+  font-size: 13px ;
+}
+
+.classGray{
+  color: gray;
+}
+.classGreen{
+  color: rgb(33, 204, 33);
+}
+
+#wordWarp{
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+  font-size: 13px !important;
+  color: gray;
+  margin-top: 0.5rem;
+}
+#wordWarp2{
+  margin-bottom: 0.2rem;
+  font-size: 13px !important;
+  color: gray;
+  margin-top: 0.5rem;
+}
+.starColor{
+ color: rgb(219, 90, 51);
+
+}
+
+#downIcon{
+  float: right;
+  color: gray;
+}
+
+.modal-container{
+  padding-top: 15px !important;
+}
+

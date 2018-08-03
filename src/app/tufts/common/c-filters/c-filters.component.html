@@ -1,0 +1,22 @@
+<div class="content-header">
+  <div class="row m-0">
+    <div class="col p-0">
+      <app-page-filters [tabName]="tabName"></app-page-filters>
+    </div>
+    <div class="col text-right p-6">Items per page
+      <select class="s-header-select">
+            <option>10</option>
+            <option>20</option>
+        </select>
+    </div>
+    <div class="col text-right p-0">
+      <select class="s-header-select">
+            <option>Price: High to Low</option>
+            <option>Price: Low to High</option>
+        </select>
+    </div>
+  </div>
+  <div class="row" style="margin: 10px 0px;">
+    <div class="s-header-filter" *ngFor="let sFilter of suggestedFilters | async">{{sFilter.name}}</div>
+  </div>
+</div>

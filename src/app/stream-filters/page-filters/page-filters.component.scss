@@ -1,0 +1,23 @@
+.s-header-name{
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #000000;
+  text-align: center;
+  padding: .3rem;
+  height: 2.2rem;
+  display: inline-block;
+  margin-right: .5rem;
+}
+.s-header-summary{
+  font-family: GothamBold;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+}
+
+.filter-list {
+  display: inline-flex;
+}

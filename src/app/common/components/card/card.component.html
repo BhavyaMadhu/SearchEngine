@@ -1,0 +1,35 @@
+ <section>
+        <div class="card-container">
+            <div class="m-b-10"><span class="f-w-600"><a [routerLink]="[cardTitle.routerLink]">{{cardTitle.name}}</a></span>
+                <!--<span class="see-all"><a (click)="cardLimit = cardList.length">see all</a></span>-->
+                <span class="see-all"><a [routerLink]="[cardTitle.routerLink]">see all</a></span>
+                <!--<i class="fa fa-chevron-right" aria-hidden="true" *ngIf="cardLimit === 4"></i>
+                <i class="fa fa-chevron-down" aria-hidden="true" *ngIf="cardLimit > 4"></i>-->
+                <ng-content></ng-content>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-b-10" *ngFor="let card of cardList | slice:0:cardLimit">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img [ngClass]="{'img-round': cardTitle.name=='FACULTY'}"
+                                src="https://placeholdit.imgix.net/~text?txtsize=38&txt=100%C3%97100&w=100&h=100">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-block p-10" style="font-size: 13px;">
+                                    <div *ngFor="let cardColumn of cardColumnDefs">
+                                        <div class="{{cardColumn}}">{{card[cardColumn]}}</div>
+                                    </div>
+                                    <!--<h6>{{card.display_name}}</h6>
+                                    <div>{{card.academic_title_ss[0]}}</div>
+                                    <div>{{card.office_address_s}}</div>
+                                    <div>{{card.school_display_ss}}</div>-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

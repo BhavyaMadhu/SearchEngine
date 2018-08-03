@@ -1,0 +1,39 @@
+<div class="c-events">
+  <div class="row" style="margin-top: 25px">
+    <div class="col-md-6"><span class="s-events-header">Events</span><span class="s-info"><i class="fa fa-info-circle" aria-hidden="true"></i></span></div>
+    <div class="col-md-6">
+      <span class="list-results"><span class="f-w-600">{{eventsList?.length}}</span> <span>Results</span></span>
+    </div>
+  </div>
+
+  <div *ngIf="eventsList.length > 0; else nodata;">
+    <div class="row">
+      <div class="col-md-6" *ngFor="let event of eventsList | slice:0:4">
+        <div class="s-events-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div style="    background-color: #3172ae;
+    width: 100%;
+    height: 100%;">
+                <div class="s-events-card-left">
+                  <div class="s-events-month">Nov</div>
+                  <div class="s-events-day">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9" style="padding: 13px 26px">
+              <h6 class="s-events-desc">{{event.display_name}}</h6>
+              <div class="s-events-date">{{event.date_sort_dt}}</div>
+              <div class="s-events-name">{{event.location_s ? event.location_s : 'Lincoln Filene Center'}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div><a class="see-all-name" [routerLink]="['../events']">See all</a><span class="see-all-chevron"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
+  </div>
+  <ng-template #nodata>
+    <div>No Events available</div>
+  </ng-template>
+</div>
